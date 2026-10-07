@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bandeja privada de contactos recibidos." />
+    <title>Bandeja de contactos | Mensajeria</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Mensajeria</a>
+      <button id="logout" class="text-button" type="button">Cerrar sesion</button>
+    </header>
+    <main class="page-shell admin-page">
+      <section aria-labelledby="admin-title">
+        <p class="eyebrow">Area privada</p>
+        <h1 id="admin-title">Bandeja de contactos</h1>
+        <p class="section-description">Mensajes recibidos, ordenados del mas reciente al mas antiguo.</p>
+        <div class="contacts-header">
+          <div class="search-control">
+            <label for="contact-search">Buscar contactos</label>
+            <input id="contact-search" type="search" placeholder="Nombre, correo o mensaje" maxlength="100" autocomplete="off" />
+          </div>
+          <button id="refresh-contacts" class="secondary-button" type="button">Actualizar</button>
+        </div>
+        <p id="contacts-count" class="contacts-count"></p>
+        <p id="admin-feedback" class="feedback" role="status" aria-live="polite"></p>
+        <div id="contacts-list" class="contacts-list" aria-live="polite"></div>
+      </section>
+    </main>
+    <script src="/admin.js" defer></script>
+  </body>
+</html>

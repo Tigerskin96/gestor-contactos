@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Acceso a la administracion de contactos." />
+    <title>Acceso administrativo | Mensajeria</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Mensajeria</a>
+      <a class="admin-link" href="/">Volver al contacto</a>
+    </header>
+    <main class="page-shell login-page">
+      <section class="login-card" aria-labelledby="login-title">
+        <p class="eyebrow">Area privada</p>
+        <h1 id="login-title">Acceso administrativo</h1>
+        <p>Ingresa tus credenciales para consultar la bandeja de contactos.</p>
+        <form id="login-form" novalidate>
+          <label for="admin-user">Usuario</label>
+          <input id="admin-user" name="username" type="text" autocomplete="username" required />
+          <label for="admin-password">Contrasena</label>
+          <input id="admin-password" name="password" type="password" autocomplete="current-password" required />
+          <p id="login-feedback" class="feedback" role="status" aria-live="polite"></p>
+          <button type="submit">Entrar a la bandeja</button>
+        </form>
+      </section>
+    </main>
+    <script src="/login.js" defer></script>
+  </body>
+</html>

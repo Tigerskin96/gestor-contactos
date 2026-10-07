@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Envianos tu consulta y nuestro equipo te contactara." />
+    <title>Contacto</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#contacto">Mensajeria</a>
+      <a class="admin-link" href="/login.html">Administracion</a>
+    </header>
+
+    <main class="page-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Estamos para ayudarte</p>
+        <h1 id="page-title">Inicia la conversacion.</h1>
+        <p>Dejanos tus datos y responderemos tu consulta lo antes posible.</p>
+      </section>
+
+      <section id="contacto" class="card" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contacto publico</p>
+          <h2 id="contact-title">Cuentanos que necesitas</h2>
+        </div>
+        <form id="contact-form" novalidate>
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required />
+
+          <label for="email">Correo electronico</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required />
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+
+          <p id="contact-feedback" class="feedback" role="status" aria-live="polite"></p>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
