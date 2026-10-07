@@ -1,0 +1,14 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (NUNCA subas tu .env real)
+.env
+
+# Base de datos local de SQLite
+db/*.sqlite
+db/*.sqlite-*
+*.db
+
+# Logs y basura del sistema
+*.log
+.DS_Store
